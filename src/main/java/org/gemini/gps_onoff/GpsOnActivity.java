@@ -18,6 +18,8 @@ public final class GpsOnActivity extends Activity
             getContentResolver(), LocationManager.GPS_PROVIDER, true);
         Settings.Secure.setLocationProviderEnabled(
             getContentResolver(), LocationManager.NETWORK_PROVIDER, true);
+        Settings.Secure.setLocationProviderEnabled(
+            getContentResolver(), LocationManager.PASSIVE_PROVIDER, true);
         finish();
     }
 
