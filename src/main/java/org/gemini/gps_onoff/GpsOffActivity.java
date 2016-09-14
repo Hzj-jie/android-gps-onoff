@@ -18,9 +18,8 @@ public final class GpsOffActivity extends Activity
             getContentResolver(), LocationManager.GPS_PROVIDER, false);
         Settings.Secure.setLocationProviderEnabled(
             getContentResolver(), LocationManager.NETWORK_PROVIDER, false);
-        // Last known location is still useful for other applications.
         Settings.Secure.setLocationProviderEnabled(
-            getContentResolver(), LocationManager.PASSIVE_PROVIDER, true);
+            getContentResolver(), LocationManager.PASSIVE_PROVIDER, false);
         finish();
     }
 
