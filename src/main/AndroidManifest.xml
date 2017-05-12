@@ -35,5 +35,57 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WifiScanOnActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Wifi Scan On"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".WifiScanOnActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WifiScanOffActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Wifi Scan Off"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".WifiScanOffActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BluetoothScanOnActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Bluetooth Scan On"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".BluetoothScanOnActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BluetoothScanOffActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Bluetooth Scan Off"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".BluetoothScanOffActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
